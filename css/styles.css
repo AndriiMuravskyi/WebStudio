@@ -1,0 +1,54 @@
+:root {
+--header-background-color #ECECEC;
+--main-background-color #2196F3;
+--gray-section-background-color #F5F4FA;
+--footer-background-color #2f303a;
+--active-color #2196F3;
+--unactive-color #AFB1B8;
+--trancparent-frame-color rgba(47, 48, 58, 0.8);
+--hero-text-color #ffffff;
+--h2-text-color #212121
+--inversion--h2-text-clor #ffffff;
+--p-text-color #757575;
+--inversion-p-text-color #ffffff;
+--active-link-color #2196F3;
+--unactive-link-color #757575;
+--unactive-nav-link-color #212121;
+}
+
+body {
+  background-color: var(--active-link-color);
+  color: var(--p-text-color);
+}
+.logo {
+  color: #2196f3;
+}
+.logo span {
+  color: var(--unactive-nav-link-color);
+}
+ul {
+  list-style: none;
+}
+/* header-site-nav */
+.site-nav-list .link {
+  color: #212121;
+}
+.site-nav-list .link:hover,
+.site-nav-list .link:focus {
+  color: #2196f3;
+}
+/* header-contacts-list */
+.header-contacts .header-contacts-list {
+  color: #757575;
+}
+.header-contacts .header-contacts-list:hover,
+.header-contacts .header-contacts-list:focus {
+  color: #2196f3;
+}
+/* section */
+.section .section-title {
+  color: #212121;
+}
+.section-list .section-list-title {
+  color: #212121;
+}
