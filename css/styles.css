@@ -1,24 +1,27 @@
 :root {
---header-background-color #ECECEC;
---main-background-color #2196F3;
---gray-section-background-color #F5F4FA;
---footer-background-color #2f303a;
---active-color #2196F3;
---unactive-color #AFB1B8;
---trancparent-frame-color rgba(47, 48, 58, 0.8);
---hero-text-color #ffffff;
---h2-text-color #212121
---inversion--h2-text-clor #ffffff;
---p-text-color #757575;
---inversion-p-text-color #ffffff;
---active-link-color #2196F3;
---unactive-link-color #757575;
---unactive-nav-link-color #212121;
+  --header-background-color: #ececec;
+  --main-background-color: #ffffff;
+  --gray-section-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+  --active-color: #2196f3;
+  --unactive-color: #afb1b8;
+  --transparent-frame-color: rgba(47, 48, 58, 0.8);
+  --hero-text-color: #ffffff;
+  --h2-text-color: #212121;
+  --inversion-h2-text-color: #ffffff;
+  --p-text-color: #757575;
+  --inversion-p-text-color: #ffffff;
+  --active-link-color: #2196f3;
+  --unactive-link-color: #757575;
+  --unactive-nav-link-color: #212121;
 }
 
 body {
-  background-color: var(--active-link-color);
+  background-color: var(--main-background-color);
   color: var(--p-text-color);
+}
+header {
+  background-color: var(--header-background-color);
 }
 .logo {
   color: #2196f3;
