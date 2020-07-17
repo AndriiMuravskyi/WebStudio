@@ -1,4 +1,5 @@
 :root {
+  /* objects-colors */
   --header-background-color: #ececec;
   --main-background-color: #ffffff;
   --gray-section-background-color: #f5f4fa;
@@ -6,8 +7,9 @@
   --active-color: #2196f3;
   --unactive-color: #afb1b8;
   --transparent-frame-color: rgba(47, 48, 58, 0.8);
+  /* texts-colors */
   --hero-text-color: #ffffff;
-  --h2-text-color: #212121;
+  --h2-h3-text-color: #212121;
   --inversion-h2-text-color: #ffffff;
   --p-text-color: #757575;
   --inversion-p-text-color: #ffffff;
@@ -23,7 +25,7 @@ body {
 header {
   background-color: var(--header-background-color);
 }
-.logo {
+header .logo {
   color: #2196f3;
 }
 .logo span {
@@ -34,24 +36,40 @@ ul {
 }
 /* header-site-nav */
 .site-nav-list .link {
-  color: #212121;
+  color: var(--unactive-nav-link-color);
 }
 .site-nav-list .link:hover,
 .site-nav-list .link:focus {
-  color: #2196f3;
+  color: var(--active-link-color);
 }
 /* header-contacts-list */
 .header-contacts .header-contacts-list {
-  color: #757575;
+  color: var(--unactive-link-color);
 }
 .header-contacts .header-contacts-list:hover,
 .header-contacts .header-contacts-list:focus {
-  color: #2196f3;
+  color: var(--active-link-color);
 }
-/* section */
-.section .section-title {
-  color: #212121;
+/* hero-section */
+.hero-section .hero-title {
+  color: var(--hero-text-color);
+  /* временно */
+  background-color: aqua;
 }
-.section-list .section-list-title {
-  color: #212121;
+/* advantages */
+.advantages-section .advantages-title {
+  display: none;
 }
+.advantages-section .advantages-list-title {
+  color: var(--h2-h3-text-color);
+}
+/* services */
+.services-section .services-title {
+  display: none;
+}
+.service-list .services-list-item {
+  color: var(--inversion-h2-text-color);
+  /* временно */
+  background-color: var(--transparent-frame-color);
+}
+/* our-team */
