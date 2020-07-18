@@ -7,6 +7,7 @@
   --active-color: #2196f3;
   --unactive-color: #afb1b8;
   --transparent-frame-color: rgba(47, 48, 58, 0.8);
+  --team-card-background-color: #ffffff;
   /* texts-colors */
   --hero-text-color: #ffffff;
   --h2-h3-text-color: #212121;
@@ -16,6 +17,7 @@
   --active-link-color: #2196f3;
   --unactive-link-color: #757575;
   --unactive-nav-link-color: #212121;
+  --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -25,7 +27,7 @@ body {
 header {
   background-color: var(--header-background-color);
 }
-header .logo {
+.logo {
   color: #2196f3;
 }
 .logo span {
@@ -73,3 +75,38 @@ ul {
   background-color: var(--transparent-frame-color);
 }
 /* our-team */
+.team-section {
+  background-color: var(--gray-section-background-color);
+}
+.team-section .team-title {
+  color: var(--h2-h3-text-color);
+}
+.team-list .team-list-item {
+  background-color: var(--team-card-background-color);
+}
+.team-list-item-name {
+  color: var(--h2-h3-text-color);
+}
+/* regular-customers */
+.customers-section .customers-title {
+  color: var(--h2-h3-text-color);
+}
+/* footer */
+footer {
+  background-color: var(--footer-background-color);
+}
+.footer-logo {
+  color: #2196f3;
+}
+.footer-logo > span {
+  color: #ffffff;
+}
+.footer-contacts {
+  color: var(--footer-contacts-text-color);
+}
+.signup-block-title {
+  color: var(--inversion-p-text-color);
+}
+.subscribe-block-title {
+  color: var(--inversion-p-text-color);
+}
