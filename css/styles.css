@@ -52,6 +52,11 @@ ul {
 /* header-site-nav */
 .site-nav-list .link {
   color: var(--unactive-nav-link-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .site-nav-list .link.current {
   color: var(--active-link-color);
@@ -63,6 +68,11 @@ ul {
 /* header-contacts-list */
 .header-contacts .header-contacts-list {
   color: var(--unactive-link-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .header-contacts .header-contacts-list:hover,
 .header-contacts .header-contacts-list:focus {
@@ -72,11 +82,24 @@ ul {
 .hero-section .hero-title {
   color: var(--hero-text-color);
   /* временно */
-  background-color: aqua;
+  background-color: var(--transparent-frame-color);
+
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 .button {
   background-color: var(--active-color);
   color: var(--inversion-p-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 /* advantages */
 .advantages-section .advantages-title {
@@ -84,6 +107,18 @@ ul {
 }
 .advantages-section .advantages-list-title {
   color: var(--h2-h3-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantages-list .advantages-list-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 /* services */
 .services-section .services-title {
@@ -93,6 +128,13 @@ ul {
   color: var(--inversion-h2-text-color);
   /* временно */
   background-color: var(--transparent-frame-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 /* our-team */
 .team-section {
@@ -100,16 +142,41 @@ ul {
 }
 .team-section .team-title {
   color: var(--h2-h3-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .team-list .team-list-item {
   background-color: var(--team-card-background-color);
 }
 .team-list-item-name {
   color: var(--h2-h3-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-list-item-position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 /* regular-customers */
 .customers-section .customers-title {
   color: var(--h2-h3-text-color);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 /* footer */
 footer {
@@ -117,18 +184,52 @@ footer {
 }
 .footer-logo {
   color: #2196f3;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 .footer-logo > span {
   color: #ffffff;
 }
-.footer-contacts {
+.footer-contacts-item {
   color: var(--footer-contacts-text-color);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
+.footer-contacts .footer-contacts-item-adress {
+  color: var(--inversion-p-text-color);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
 .signup-block-title {
   color: var(--inversion-p-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .subscribe-block-title {
   color: var(--inversion-p-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 /* portfolio page */
 /* hidden h1 */
