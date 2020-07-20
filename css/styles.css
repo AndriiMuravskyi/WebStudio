@@ -27,6 +27,9 @@ body {
 header {
   background-color: var(--header-background-color);
 }
+a {
+  text-decoration: none;
+}
 .logo {
   color: #2196f3;
 }
@@ -39,6 +42,9 @@ ul {
 /* header-site-nav */
 .site-nav-list .link {
   color: var(--unactive-nav-link-color);
+}
+.site-nav-list .link.current {
+  color: var(--active-link-color);
 }
 .site-nav-list .link:hover,
 .site-nav-list .link:focus {
@@ -57,6 +63,10 @@ ul {
   color: var(--hero-text-color);
   /* временно */
   background-color: aqua;
+}
+.button {
+  background-color: var(--active-color);
+  color: var(--inversion-p-text-color);
 }
 /* advantages */
 .advantages-section .advantages-title {
