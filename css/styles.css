@@ -237,9 +237,14 @@ footer {
   display: none;
 }
 /* filter control panel */
-.portfolio-filter .portfolio-filter-item {
+.portfolio-filter-item {
   background-color: var(--gray-section-background-color);
   color: var(--unactive-nav-link-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
 }
 .portfolio-filter .portfolio-filter-item:hover,
 .portfolio-filter .portfolio-filter-item:focus {
@@ -249,7 +254,27 @@ footer {
 /* filter items */
 .portfolio-item .portfolio-item-name {
   color: var(--h2-h3-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .portfolio-item .portfolio-item-group {
   color: var(--p-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+.portfolio-item .portfolio-item-pop-up-text {
+  /* временно */
+  background-color: var(--active-color);
+  color: var(--inversion-p-text-color);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
 }
