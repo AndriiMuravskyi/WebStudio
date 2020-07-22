@@ -121,9 +121,6 @@ ul {
   background-color: var(--transparent-frame-color);
   margin: 0px auto;
 }
-.button-on-hero {
-  width: fit-content;
-}
 .hero-section .hero-title {
   color: var(--hero-text-color);
 
@@ -145,7 +142,8 @@ ul {
   display: inline-block;
   padding: 11px 32px;
 
-  margin-left: auto;
+  width: fit-content;
+
   margin-right: auto;
 
   font-weight: 700;
