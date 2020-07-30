@@ -196,15 +196,6 @@ ul {
 .advantages-list-text {
   margin: 0px;
 }
-.advantages-list-bg {
-  background-color: var(--gray-section-background-color);
-  height: 120px;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-
-  margin-bottom: 30px;
-}
 .advantages-section .advantages-list-title {
   color: var(--h2-h3-text-color);
 
@@ -216,6 +207,28 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.advantages-list-title::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: var(--gray-section-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.advantages-list-title.adv-icon-antenna::before {
+  background-image: url(../images/advantages-icons/antenna.svg);
+}
+.advantages-list-title.adv-icon-clock::before {
+  background-image: url(../images/advantages-icons/clock.svg);
+}
+.advantages-list-title.adv-icon-diagram::before {
+  background-image: url(../images/advantages-icons/diagram.svg);
+}
+.advantages-list-title.adv-icon-astronaut::before {
+  background-image: url(../images/advantages-icons/astronaut.svg);
 }
 .advantages-list .advantages-list-item {
   font-weight: 400;
