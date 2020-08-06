@@ -207,11 +207,15 @@ ul {
 .advantages-list-item {
   width: 270px;
 }
-.advantages-list-icon {
-  background-color: var(--gray-section-background-color);
+.advantages-list-icon-background {
+  display: flex;
   width: 270px;
+  height: 120px;
+  background-color: var(--gray-section-background-color);
   border-radius: 4px;
   margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 .advantages-list-text {
   margin: 0px;
