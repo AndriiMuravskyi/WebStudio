@@ -389,12 +389,24 @@ ul {
 }
 .regular-customers-list-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
   background-color: transparent;
   border: 1px solid var(--unactive-customers-frame-color);
   border-radius: 4px;
-  justify-content: center;
+}
+.regular-customers-list-link:hover,
+.regular-customers-list-link:focus {
+  border: 1px solid var(--active-link-color);
+}
+.regular-customers-list-icon {
+  fill: var(--unactive-customers-frame-color);
+}
+.regular-customers-list-link:hover > .regular-customers-list-icon,
+.regular-customers-list-link:focus > .regular-customers-list-icon {
+  fill: var(--active-link-color);
 }
 /* footer */
 footer {
