@@ -481,10 +481,15 @@ footer {
   height: 44px;
   border-radius: 100%;
   justify-content: center;
+  align-items: center;
 }
 .signup-block-item-link:hover,
 .signup-block-item-link:focus {
   background-color: var(--active-link-color);
+}
+.signup-block-item-icon {
+  display: block;
+  fill: #ffffff;
 }
 .subscribe-block-title {
   color: var(--inversion-p-text-color);
