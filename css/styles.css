@@ -52,6 +52,7 @@ button {
 }
 header {
   background-color: var(--header-background-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -81,6 +82,9 @@ ul {
   display: flex;
   margin-left: 85px;
 }
+.site-nav-list-item {
+  position: relative;
+}
 .site-nav-list-item .link {
   display: block;
   padding-top: 32px;
@@ -104,6 +108,17 @@ ul {
 .site-nav-list .link:hover,
 .site-nav-list .link:focus {
   color: var(--active-link-color);
+}
+.site-nav-list .link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--active-link-color);
+  border-radius: 2px;
 }
 /* header-contacts-list */
 .header-contacts {
