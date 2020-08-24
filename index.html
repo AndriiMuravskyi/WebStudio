@@ -552,9 +552,24 @@
         </div>
       </footer>
     </main>
-    <div class="backdrop is-hidden" data-modal data-modal-close>
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close>X</button>
+        <p class="modal-heading">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="">
+          <label for="name">Имя<input type="name" id="name" /></label>
+          <label for="tel">Телефон<input type="tel" id="tel" /></label>
+          <label for="e-mail">Почта<input type="email" id="e-mail" /></label>
+          <label for="comment"
+            >Комментарий<input type="textarea" id="comment"
+          /></label>
+          <label for=""
+            ><input type="checkbox" id="e-mail" />Соглашаюсь с рассылкой и
+            принимаю <a href="">Условия договора</a></label
+          >
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
