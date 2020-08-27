@@ -645,6 +645,7 @@ footer {
 .modal-heading {
   margin-top: 0px;
   margin-bottom: 12px;
+  text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -686,14 +687,42 @@ footer {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
+  padding-left: 42px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
+
 .comment {
   height: 120px;
   resize: none;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+.comment::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-form-input:hover + .modal-input-icon,
+.comment-field:focus-within > .modal-input-icon {
+  color: var(--active-link-color);
+}
+.modal-form-input:hover,
+.comment:hover,
+.modal-form-label:focus-within > .modal-form-input,
+.comment-field:focus-within > .comment {
+  border: 1px solid var(--active-link-color);
+  outline: none;
 }
 .modal-submit-button {
+  margin-top: 30px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -726,6 +755,24 @@ footer {
 .modal-form-checkbox-link {
   color: var(--active-link-color);
   text-decoration: underline;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-form-label {
+  position: relative;
+}
+.modal-input-icon {
+  position: absolute;
+  top: 28px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+.modal-input-icon {
+  fill: currentColor;
 }
 /* portfolio page */
 .portfolio-container {
