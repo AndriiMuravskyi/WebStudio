@@ -664,6 +664,7 @@ footer {
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 .modal-close-button:hover,
 .modal-close-button:focus {
@@ -744,6 +745,9 @@ footer {
   color: #ffffff;
 }
 .modal-form-checkbox-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -753,6 +757,7 @@ footer {
   color: var(--unactive-link-color);
 }
 .modal-form-checkbox-link {
+  margin-left: 4px;
   color: var(--active-link-color);
   text-decoration: underline;
 }
@@ -773,6 +778,26 @@ footer {
 }
 .modal-input-icon {
   fill: currentColor;
+}
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid #212121;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+.checkbox:checked + .checkbox-icon {
+  border: 1px solid var(--active-link-color);
+  background-color: var(--active-link-color);
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
 }
 /* portfolio page */
 .portfolio-container {
