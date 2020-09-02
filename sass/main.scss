@@ -1,5 +1,16 @@
 @import './utils/variables';
 @import './base/normalize';
 @import './components/forAllSite';
-@import './components/header';
-@import './components/hero';
+@import './components/main/header';
+@import './components/main/hero';
+@import './components/main/advantages';
+@import './components/main/services';
+@import './components/main/our-team';
+@import './components/main/regular-customers';
+// portfolio page start
+@import './components/portfolio/forAllPagePortfolio';
+@import './components/portfolio/filter';
+@import './components/portfolio/filter-list';
+// portfolio page end
+@import './components/footer';
+@import './components/modal';
