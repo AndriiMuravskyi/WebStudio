@@ -36,7 +36,7 @@
   display: block;
 }
 .portfolio-item .portfolio-item-name {
-  color: var(--h2-h3-text-color);
+  color: $h2-h3-text-color;
 
   font-weight: 700;
   font-size: 18px;
@@ -47,7 +47,7 @@
   margin-bottom: 4px;
 }
 .portfolio-item .portfolio-item-group {
-  color: var(--p-text-color);
+  color: $p-text-color;
 
   margin: 0px;
 
@@ -76,7 +76,7 @@
   padding: 24px;
 }
 .portfolio-item-pop-up-text {
-  color: var(--inversion-p-text-color);
+  color: $inversion-p-text-color;
   margin: 0;
 
   font-weight: 400;
@@ -85,7 +85,7 @@
   letter-spacing: 0.03em;
 }
 .portfolio-item-text-container {
-  border: 1px solid var(--stroke-on-portfolio-card-color);
+  border: 1px solid $stroke-on-portfolio-card-color;
   border-top: none;
   padding: 20px 24px;
 }

@@ -45,7 +45,7 @@
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
-  color: var(--h2-h3-text-color);
+  color: $h2-h3-text-color;
 }
 /* modal close button */
 .modal-close-button {
@@ -61,7 +61,7 @@
 }
 .modal-close-button:hover,
 .modal-close-button:focus {
-  fill: var(--active-link-color);
+  fill: $active-link-color;
 }
 /* modal form */
 .label-name {
@@ -74,7 +74,7 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--unactive-link-color);
+  color: $unactive-link-color;
 }
 .modal-form-input {
   display: block;
@@ -106,13 +106,13 @@
 }
 .modal-form-input:hover + .modal-input-icon,
 .comment-field:focus-within > .modal-input-icon {
-  color: var(--active-link-color);
+  color: $active-link-color;
 }
 .modal-form-input:hover,
 .comment:hover,
 .modal-form-label:focus-within > .modal-form-input,
 .comment-field:focus-within > .comment {
-  border: 1px solid var(--active-link-color);
+  border: 1px solid $active-link-color;
   outline: none;
 }
 .modal-submit-button {
@@ -122,7 +122,7 @@
   margin-right: auto;
   min-width: 200px;
   min-height: 50px;
-  background-color: var(--active-link-color);
+  background-color: $active-link-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -147,11 +147,11 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--unactive-link-color);
+  color: $unactive-link-color;
 }
 .modal-form-checkbox-link {
   margin-left: 4px;
-  color: var(--active-link-color);
+  color: $active-link-color;
   text-decoration: underline;
 }
 .checkbox {
@@ -186,8 +186,8 @@
   margin-right: 8px;
 }
 .checkbox:checked + .checkbox-icon {
-  border: 1px solid var(--active-link-color);
-  background-color: var(--active-link-color);
+  border: 1px solid $active-link-color;
+  background-color: $active-link-color;
   background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;

@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--footer-background-color);
+  background-color: $footer-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -24,7 +24,7 @@ footer {
   color: #ffffff;
 }
 .footer-contacts-item {
-  color: var(--footer-contacts-text-color);
+  color: $footer-contacts-text-color;
 
   font-style: normal;
   font-weight: normal;
@@ -37,7 +37,7 @@ footer {
   margin-bottom: 9px;
 }
 .footer-contacts-item-adress {
-  color: var(--inversion-p-text-color);
+  color: $inversion-p-text-color;
   display: inline-block;
   margin-bottom: 9px;
 
@@ -49,7 +49,7 @@ footer {
 }
 
 .signup-block-title {
-  color: var(--inversion-p-text-color);
+  color: $inversion-p-text-color;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -65,7 +65,7 @@ footer {
   margin-right: 10px;
 }
 .signup-block-item-link {
-  background-color: var(--footer-unactive-soc-link-color);
+  background-color: $footer-unactive-soc-link-color;
   display: flex;
   width: 44px;
   height: 44px;
@@ -77,7 +77,7 @@ footer {
 }
 .signup-block-item-link:hover,
 .signup-block-item-link:focus {
-  background-color: var(--active-link-color);
+  background-color: $active-link-color;
 }
 .signup-block-item-icon {
   display: block;
@@ -85,7 +85,7 @@ footer {
 }
 
 .subscribe-block-title {
-  color: var(--inversion-p-text-color);
+  color: $inversion-p-text-color;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -103,7 +103,7 @@ footer {
   height: 50px;
   margin-right: 12px;
   padding: 15px 16px;
-  background-color: var(--footer-background-color);
+  background-color: $footer-background-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -121,7 +121,7 @@ footer {
   justify-content: center;
   width: 200px;
   height: 50px;
-  background-color: var(--active-link-color);
+  background-color: $active-link-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -138,8 +138,8 @@ footer {
 .footer-signup-button:hover,
 .footer-signup-button:focus {
   background-color: #ffffff;
-  fill: var(--active-link-color);
-  color: var(--active-link-color);
+  fill: $active-link-color;
+  color: $active-link-color;
 }
 .icon-send {
   margin-left: 10px;

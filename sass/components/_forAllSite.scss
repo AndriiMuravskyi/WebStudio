@@ -8,8 +8,8 @@ html {
 }
 body {
   padding-top: 80px;
-  background-color: var(--main-background-color);
-  color: var(--p-text-color);
+  background-color: $main-background-color;
+  color: $p-text-color;
   font-family: Roboto, sans-serif;
 }
 

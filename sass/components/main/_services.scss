@@ -2,7 +2,7 @@
   padding-bottom: 94px;
 }
 .services-section .services-title {
-  color: var(--h2-h3-text-color);
+  color: $h2-h3-text-color;
 
   margin-top: 0px;
   margin-bottom: 50px;
@@ -28,9 +28,9 @@
   position: absolute;
   bottom: 0px;
   width: 370px;
-  color: var(--inversion-h2-text-color);
+  color: $inversion-h2-text-color;
   /* временно */
-  background-color: var(--transparent-frame-color);
+  background-color: $transparent-frame-color;
   padding-top: 27px;
   padding-bottom: 27px;
   margin: 0px;

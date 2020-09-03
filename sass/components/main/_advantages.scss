@@ -16,7 +16,7 @@
   display: flex;
   width: 270px;
   height: 120px;
-  background-color: var(--gray-section-background-color);
+  background-color: $gray-section-background-color;
   border-radius: 4px;
   margin-bottom: 30px;
   align-items: center;
@@ -26,7 +26,7 @@
   margin: 0px;
 }
 .advantages-section .advantages-list-title {
-  color: var(--h2-h3-text-color);
+  color: $h2-h3-text-color;
 
   margin-top: 0px;
   margin-bottom: 10px;
