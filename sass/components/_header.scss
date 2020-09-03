@@ -14,9 +14,9 @@ header {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
-.logo span {
-  color: $unactive-nav-link-color;
+  & span {
+    color: $unactive-nav-link-color;
+  }
 }
 
 /* header-site-nav */
