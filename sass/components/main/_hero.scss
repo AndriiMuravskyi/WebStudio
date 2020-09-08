@@ -11,39 +11,35 @@
   margin-left: auto;
   margin-right: auto;
   background-color: $h2-h3-text-color;
-  background-image: linear-gradient(
+  background-image: 
+  linear-gradient(
       to right,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url(../images/Header-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.hero-section .hero-title {
-  color: $hero-text-color;
-
+.hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   letter-spacing: 0.06em;
-  margin-top: 0px;
-  margin-bottom: 30px;
+
+  color: $hero-text-color;  
 }
 .hero-button {
-  background-color: $active-color;
-  color: $inversion-p-text-color;
-
-  border: 1px, solid $active-color;
-  border-radius: 4px;
   display: inline-block;
   padding: 11px 32px;
-
+  border: none;
+  border-radius: 4px;
   width: fit-content;
-
   cursor: pointer;
 
   font-weight: 700;
@@ -52,10 +48,16 @@
   letter-spacing: 0.06em;
   text-align: center;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: $active-color;
+  color: $inversion-p-text-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: $active-color;
 }
-.hero-button:hover,
-.hero-button:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.24), 0px 4px 4px rgba(0, 0, 0, 0.12),
-    1px 4px 6px rgba(0, 0, 0, 0.32);
 }
+

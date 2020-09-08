@@ -1,9 +1,7 @@
 .services-section {
   padding-bottom: 94px;
 }
-.services-section .services-title {
-  color: $h2-h3-text-color;
-
+.services-title {
   margin-top: 0px;
   margin-bottom: 50px;
 
@@ -12,6 +10,8 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
+  color: $h2-h3-text-color;
 }
 .service-list {
   display: flex;
@@ -24,13 +24,11 @@
 .service-list-img {
   display: block;
 }
-.service-list .services-list-item {
+.services-list-item {
   position: absolute;
   bottom: 0px;
   width: 370px;
-  color: $inversion-h2-text-color;
-  /* временно */
-  background-color: $transparent-frame-color;
+ 
   padding-top: 27px;
   padding-bottom: 27px;
   margin: 0px;
@@ -41,4 +39,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  color: $inversion-h2-text-color;
+  background-color: $transparent-frame-color;
 }

@@ -8,6 +8,7 @@
   left: 0px;
   width: 100%;
   height: 100%;
+  
   background-color: rgba(0, 0, 0, 0.5);
 
   opacity: 1;
@@ -54,15 +55,19 @@
   right: 8px;
   width: 30px;
   height: 30px;
-  background-color: transparent;
+
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-}
-.modal-close-button:hover,
-.modal-close-button:focus {
+
+  background-color: transparent;
+  
+  &:hover,
+  &:focus {
   fill: $active-link-color;
+  }
 }
+
 /* modal form */
 .label-name {
   display: block;
@@ -80,30 +85,33 @@
   display: block;
   width: 100%;
   height: 40px;
+
   margin-bottom: 10px;
   padding-left: 42px;
   padding-top: 11px;
   padding-bottom: 11px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-
 .comment {
   height: 120px;
   resize: none;
   padding: 12px 16px;
   margin-bottom: 20px;
-}
-.comment::placeholder {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+  
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
+
 .modal-form-input:hover + .modal-input-icon,
 .comment-field:focus-within > .modal-input-icon {
   color: $active-link-color;
@@ -141,12 +149,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  
   color: $unactive-link-color;
 }
 .modal-form-checkbox-link {

@@ -1,7 +1,8 @@
 footer {
-  background-color: $footer-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: $footer-background-color;
 }
 .footer-container {
   display: flex;
@@ -9,8 +10,8 @@ footer {
   justify-content: space-between;
 }
 .footer-logo {
-  color: #2196f3;
   display: inline-block;
+
   margin-bottom: 20px;
 
   font-family: Raleway;
@@ -19,26 +20,30 @@ footer {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-.footer-logo > span {
-  color: #ffffff;
-}
-.footer-contacts-item {
-  color: $footer-contacts-text-color;
+  color: #2196f3;
 
+  & > span {
+    color: #ffffff;
+  }
+}
+
+.footer-contacts-item {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  color: $footer-contacts-text-color;
 }
 .footer-contacts-item-mail {
   display: inline-block;
+
   margin-bottom: 9px;
 }
 .footer-contacts-item-adress {
-  color: $inversion-p-text-color;
   display: inline-block;
+
   margin-bottom: 9px;
 
   font-style: normal;
@@ -46,10 +51,11 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  color: $inversion-p-text-color;
 }
 
 .signup-block-title {
-  color: $inversion-p-text-color;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -57,6 +63,8 @@ footer {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  color: $inversion-p-text-color;
 }
 .signup-block-items {
   display: flex;
@@ -65,27 +73,32 @@ footer {
   margin-right: 10px;
 }
 .signup-block-item-link {
-  background-color: $footer-unactive-soc-link-color;
   display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 100%;
   justify-content: center;
   align-items: center;
 
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+ 
+
+  background-color: $footer-unactive-soc-link-color;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+   background-color: $active-link-color;
 }
-.signup-block-item-link:hover,
-.signup-block-item-link:focus {
-  background-color: $active-link-color;
 }
+
 .signup-block-item-icon {
   display: block;
+
   fill: #ffffff;
 }
 
 .subscribe-block-title {
-  color: $inversion-p-text-color;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -93,6 +106,8 @@ footer {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  color: $inversion-p-text-color;
 }
 .subscribe-block-form {
   display: flex;
@@ -101,46 +116,65 @@ footer {
   display: block;
   width: 358px;
   height: 50px;
+
   margin-right: 12px;
   padding: 15px 16px;
-  background-color: $footer-background-color;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+
+  background-color: $footer-background-color;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-signup-button {
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 200px;
   height: 50px;
-  background-color: $active-link-color;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   cursor: pointer;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87px;
   letter-spacing: 0.06em;
+
+  background-color: $active-link-color;
   color: #ffffff;
-  fill: #ffffff;
-}
-.footer-signup-button:hover,
-.footer-signup-button:focus {
-  background-color: #ffffff;
-  fill: $active-link-color;
-  color: $active-link-color;
+  fill: currentColor;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: $active-link-color;
+  }
 }
 .icon-send {
   margin-left: 10px;
-}
+  }
+
+  .footer-signup-button:hover > .icon-send-use,
+  .footer-signup-button:focus > .icon-send-use {
+    fill: $active-link-color;
+  }
+

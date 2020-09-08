@@ -2,9 +2,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.customers-section .customers-title {
-  color: $h2-h3-text-color;
-
+.customers-title {
   margin-top: 0px;
   margin-bottom: 50px;
 
@@ -13,6 +11,8 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
+  color: $h2-h3-text-color;
 }
 .regular-customers-list {
   display: flex;
@@ -22,18 +22,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 170px;
   height: 90px;
-  background-color: transparent;
+
   border: 1px solid $unactive-customers-frame-color;
   border-radius: 4px;
 
+  background-color: transparent;
+
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.regular-customers-list-link:hover,
-.regular-customers-list-link:focus {
+
+  &:hover,
+  &:focus {
   border: 1px solid $active-link-color;
 }
+}
+
 .regular-customers-list-icon {
   fill: $unactive-customers-frame-color;
 
