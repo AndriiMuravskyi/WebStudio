@@ -1,7 +1,10 @@
 .portfolio-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
+
 /* hidden h1 */
 .portfolio-title {
   display: none;

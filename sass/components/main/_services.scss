@@ -1,45 +1,61 @@
 .services-section {
-  padding-bottom: 94px;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 94px;
+  }
 }
 .services-title {
-  margin-top: 0px;
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: $h2-h3-text-color;
+  @media screen and (min-width: $desktop) {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    color: $h2-h3-text-color;
+  }
 }
+
 .service-list {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
+
 .service-list-card {
-  position: relative;
-  text-align: center;
+  @media screen and (min-width: $desktop) {
+    position: relative;
+    text-align: center;
+  }
 }
+
 .service-list-img {
-  display: block;
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
+
 .services-list-item {
-  position: absolute;
-  bottom: 0px;
-  width: 370px;
- 
-  padding-top: 27px;
-  padding-bottom: 27px;
-  margin: 0px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: $inversion-h2-text-color;
-  background-color: $transparent-frame-color;
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    bottom: 0px;
+    width: 370px;
+   
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0px;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: $inversion-h2-text-color;
+    background-color: $transparent-frame-color;
+  }
 }
