@@ -1,4 +1,10 @@
 .customers-section {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+
+  }
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -6,6 +12,12 @@
 }
 
 .customers-title {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+
+  }
   @media screen and (min-width: $desktop) {
     margin-top: 0px;
     margin-bottom: 50px;
@@ -21,6 +33,12 @@
 }
 
 .regular-customers-list {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
@@ -28,6 +46,12 @@
 }
 
 .regular-customers-list-link {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: center;
@@ -51,6 +75,12 @@
 }
 
 .regular-customers-list-icon {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+
+  }
   @media screen and (min-width: $desktop) {
     fill: $unactive-customers-frame-color;
 
@@ -60,6 +90,12 @@
 
 .regular-customers-list-link:hover > .regular-customers-list-icon,
 .regular-customers-list-link:focus > .regular-customers-list-icon {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+
+  }
   @media screen and (min-width: $desktop) {
     fill: $active-link-color;
   }

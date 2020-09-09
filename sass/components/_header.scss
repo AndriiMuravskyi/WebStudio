@@ -1,4 +1,10 @@
 header {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     position: fixed;
     width: 100%;
@@ -10,6 +16,12 @@ header {
   }
 
 .logo {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     color: #2196f3;
     font-family: Raleway, sans-serif;
@@ -25,6 +37,12 @@ header {
 
 /* header-site-nav */
 .header-items {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
@@ -32,6 +50,12 @@ header {
 }
 
 .site-nav-list {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     margin-left: 85px;
@@ -68,6 +92,12 @@ header {
 }
 
 .site-nav-list-item {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     position: relative;
 
@@ -85,18 +115,36 @@ header {
 
 /* header-contacts-list */
 .header-contacts {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     margin-left: auto;
   }
 }
 .header-contacts-list + .header-contacts-list {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     margin-left: 30px;
   }
 }
 
 .header-contacts-list-item {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
@@ -117,6 +165,12 @@ header {
 }
 
 .header-contacts-list-icon {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     margin-right: 10px;
     fill: currentColor;

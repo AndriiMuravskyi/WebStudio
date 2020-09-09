@@ -1,4 +1,10 @@
 .advantages-section {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     margin-top: 0px;
     margin-bottom: 94px;
@@ -6,12 +12,16 @@
 }
 
 .advantages-title {
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
+  display: none;
 }
 
 .advantages-list {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
@@ -19,34 +29,63 @@
 }
 
 .advantages-list-item {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     width: 270px;
   }
 }
 
 .advantages-list-icon-background {
-  @media screen and (min-width: $desktop) {
-    display: flex;
+  display: flex;
     align-items: center;
     justify-content: center;
   
-    width: 270px;
+    max-width: 450px;
     height: 120px;
   
     border-radius: 4px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
     
     background-color: $gray-section-background-color;
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+    height: 120px;
   }
 }
 
 .advantages-list-text {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     margin: 0px;
   }
 }
 
 .advantages-list-title {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     margin-top: 0px;
     margin-bottom: 10px;
@@ -62,6 +101,12 @@
 }
 
 .advantages-list-item {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     font-weight: 400;
     font-size: 14px;

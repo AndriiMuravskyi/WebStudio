@@ -1,4 +1,10 @@
 .team-section {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -8,6 +14,12 @@
 }
 
 .team-list {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
@@ -15,6 +27,12 @@
 }
 
 .team-title {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     margin-top: 0px;
     margin-bottom: 50px;
@@ -30,6 +48,12 @@
 }
 
 .team-list-item {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     padding-bottom: 24px;
 
@@ -42,6 +66,12 @@
   
 
 .team-list-item-img {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: block;
     margin-bottom: 30px;
@@ -49,6 +79,12 @@
 }
 
 .team-list-item-name {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: block;
 
@@ -66,6 +102,12 @@
 }
 
 .team-list-item-position {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: block;
     margin-top: 0;
@@ -80,6 +122,12 @@
 }
 
 .team-list-item-social-items {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: center;
@@ -87,6 +135,12 @@
 }
 
 .team-list-item {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     width: 270px;
     text-align: center;
@@ -94,6 +148,12 @@
 }
 
 .team-list-item-social-links {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: center;
@@ -117,6 +177,12 @@
 }
 
 .team-list-item-social-icon {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: inline-block;
     width: 20px;
@@ -129,6 +195,12 @@
 
 .team-list-item-social-links:hover > .team-list-item-social-icon,
 .team-list-item-social-links:focus > .team-list-item-social-icon {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     fill: #ffffff;
   }

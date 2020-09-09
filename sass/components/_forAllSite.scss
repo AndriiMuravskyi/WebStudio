@@ -7,6 +7,12 @@ html {
   box-sizing: inherit;
 }
 body {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+
+  }
   @media screen and (min-width: $desktop) {
     padding-top: 80px;
     background-color: $main-background-color;
@@ -16,13 +22,20 @@ body {
 }
 
 .container {
+  padding-left: 15px;
+    padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    
+    }
   }
 
 a {

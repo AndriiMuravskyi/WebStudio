@@ -1,4 +1,10 @@
 .portfolio-container {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+
+  }
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;

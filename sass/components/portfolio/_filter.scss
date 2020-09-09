@@ -1,4 +1,10 @@
 .portfolio-filter {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: center;
@@ -9,12 +15,24 @@
 }
 
 .portfolio-filter-list:not(:last-child) {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+
+  }
   @media screen and (min-width: $desktop) {
     margin-right: 8px;
   }
 }
 
 .portfolio-filter-item {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+
+  }
   @media screen and (min-width: $desktop) {
     padding: 6px 22px;
     border-radius: 4px;

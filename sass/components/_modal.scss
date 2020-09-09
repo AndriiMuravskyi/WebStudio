@@ -1,4 +1,10 @@
 .backdrop.is-hidden {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     opacity: 0;
     pointer-events: none;
@@ -6,6 +12,12 @@
 }
 
 .backdrop {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     position: fixed;
     top: 0px;
@@ -21,6 +33,12 @@
 }
 
 .modal {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     position: absolute;
     top: 50%;
@@ -42,6 +60,12 @@
 }
 
 .backdrop.is-hidden .modal {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     transform: translate(-50%, -50%) scale(0.9);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -49,6 +73,12 @@
 }
 
 .modal-heading {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     margin-top: 0px;
     margin-bottom: 12px;
@@ -65,6 +95,12 @@
 
 /* modal close button */
 .modal-close-button {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     position: absolute;
     top: 8px;
@@ -87,6 +123,12 @@
 
 /* modal form */
 .label-name {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: block;
     margin-bottom: 4px;
@@ -102,6 +144,12 @@
 }
 
 .modal-form-input {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: block;
     width: 100%;
@@ -118,6 +166,12 @@
 }
 
 .comment {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     height: 120px;
     resize: none;
@@ -142,6 +196,12 @@
 
 .modal-form-input:hover + .modal-input-icon,
 .comment-field:focus-within > .modal-input-icon {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     color: $active-link-color;
   }
@@ -151,6 +211,12 @@
 .comment:hover,
 .modal-form-label:focus-within > .modal-form-input,
 .comment-field:focus-within > .comment {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     border: 1px solid $active-link-color;
     outline: none;
@@ -158,6 +224,12 @@
 }
 
 .modal-submit-button {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     margin-top: 30px;
     display: block;
@@ -183,6 +255,12 @@
 }
 
 .modal-form-checkbox-text {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
@@ -200,6 +278,12 @@
 }
 
 .modal-form-checkbox-link {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     margin-left: 4px;
     color: $active-link-color;
@@ -208,6 +292,12 @@
 }
 
 .checkbox {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
@@ -216,12 +306,24 @@
 }
 
 .modal-form-label {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     position: relative;
   }
 }
 
 .modal-input-icon {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     position: absolute;
     top: 28px;
@@ -232,12 +334,24 @@
 }
 
 .modal-input-icon {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     fill: currentColor;
   }
 }
 
 .checkbox {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -246,6 +360,12 @@
 }
 
 .checkbox-icon {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     display: inline-block;
     width: 16px;
@@ -257,6 +377,12 @@
 }
 
 .checkbox:checked + .checkbox-icon {
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
   @media screen and (min-width: $desktop) {
     border: 1px solid $active-link-color;
     background-color: $active-link-color;
