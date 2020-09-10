@@ -355,16 +355,15 @@ html {
           box-sizing: inherit;
 }
 
-@media screen and (min-width: 1170px) {
-  body {
-    padding-top: 80px;
-    background-color: #ffffff;
-    color: #757575;
-    font-family: Roboto, sans-serif;
-  }
+body {
+  padding-top: 80px;
+  background-color: #ffffff;
+  color: #757575;
+  font-family: Roboto, sans-serif;
 }
 
 .container {
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -391,6 +390,10 @@ ul {
           padding-inline-start: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+header {
+  display: none;
 }
 
 @media screen and (min-width: 1170px) {
