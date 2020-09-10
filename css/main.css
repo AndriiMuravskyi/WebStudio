@@ -363,7 +363,7 @@ body {
 }
 
 .container {
-  width: 480px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -559,15 +559,14 @@ header {
 }
 
 .hero-overlay {
-  max-width: 480px;
-  height: 400px;
+  max-width: 1600px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header-img.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 @media screen and (min-width: 1170px) {
@@ -661,10 +660,6 @@ header {
   }
 }
 
-.advantages-list-item {
-  max-width: 450px;
-}
-
 @media screen and (min-width: 1170px) {
   .advantages-list-item {
     width: 270px;
@@ -681,8 +676,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 450px;
-  height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -809,6 +802,7 @@ header {
 
 @media screen and (min-width: 1170px) {
   .team-section {
+    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -859,7 +853,6 @@ header {
 }
 
 .team-list-item {
-  max-width: 450px;
   padding-bottom: 24px;
   margin-bottom: 30px;
   background-color: #ffffff;
@@ -870,7 +863,8 @@ header {
 
 .team-list-item-img {
   display: block;
-  width: 450px;
+  width: 100%;
+  height: auto;
   margin-bottom: 30px;
 }
 
@@ -952,7 +946,6 @@ header {
 }
 
 .customers-section {
-  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -961,7 +954,7 @@ header {
 
 @media screen and (min-width: 1170px) {
   .customers-section {
-    max-width: 1170px;
+    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1015,7 +1008,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
-  width: 210px;
+  width: 50px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -1406,7 +1399,7 @@ footer {
 
 .footer-signup-input {
   display: block;
-  width: 358px;
+  max-width: 358px;
   height: 50px;
   margin-bottom: 20px;
   padding: 15px 16px;

@@ -24,7 +24,7 @@
 }
 
 .advantages-list-item {
-  max-width: 450px;
+  // max-width: 450px;
   
   @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
@@ -37,8 +37,7 @@
   align-items: center;
   justify-content: center;
   
-  max-width: 450px;
-  height: 120px;
+  
   
   border-radius: 4px;
   margin-bottom: 30px;

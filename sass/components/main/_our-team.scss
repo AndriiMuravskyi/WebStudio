@@ -1,4 +1,7 @@
 .team-section {
+  // max-width: 480px;
+  // margin-left: auto;
+  // margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -6,6 +9,7 @@
 
   @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
+    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -45,7 +49,7 @@
 }
 
 .team-list-item {
-  max-width: 450px;
+  // max-width: 100%;
 
   padding-bottom: 24px;
   margin-bottom: 30px;
@@ -65,7 +69,8 @@
 .team-list-item-img {
   display: block;
 
-  width: 450px;
+  width: 100%;
+  height: auto;
 
   margin-bottom: 30px;
 
