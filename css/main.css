@@ -874,6 +874,12 @@ header {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1170px) {
+  .team-list-item-img {
+    width: 270px;
+  }
+}
+
 .team-list-item-name {
   display: block;
   margin-top: 0px;
