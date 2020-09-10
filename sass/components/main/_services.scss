@@ -1,18 +1,16 @@
 .services-section {
-  @media screen and (min-width: $mobile) {
-
-  }
+  display: none;
+  
   @media screen and (min-width: $tablet) {
 
   }
   @media screen and (min-width: $desktop) {
+    display: block;
     padding-bottom: 94px;
   }
 }
 .services-title {
-  @media screen and (min-width: $mobile) {
-
-  }
+  
   @media screen and (min-width: $tablet) {
 
   }
@@ -31,9 +29,7 @@
 }
 
 .service-list {
-  @media screen and (min-width: $mobile) {
-
-  }
+  
   @media screen and (min-width: $tablet) {
 
   }
@@ -44,9 +40,7 @@
 }
 
 .service-list-card {
-  @media screen and (min-width: $mobile) {
-
-  }
+  
   @media screen and (min-width: $tablet) {
 
   }
@@ -57,9 +51,7 @@
 }
 
 .service-list-img {
-  @media screen and (min-width: $mobile) {
-
-  }
+  
   @media screen and (min-width: $tablet) {
 
   }
@@ -69,9 +61,7 @@
 }
 
 .services-list-item {
-  @media screen and (min-width: $mobile) {
-
-  }
+  
   @media screen and (min-width: $tablet) {
 
   }

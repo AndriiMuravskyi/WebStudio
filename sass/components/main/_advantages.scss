@@ -1,12 +1,9 @@
 .advantages-section {
-  @media screen and (min-width: $mobile) {
+  margin-top: 0px;
+  margin-bottom: 60px;
 
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    margin-top: 0px;
     margin-bottom: 94px;
   }
 }
@@ -16,25 +13,20 @@
 }
 
 .advantages-list {
-  @media screen and (min-width: $mobile) {
-
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
 
 .advantages-list-item {
-  @media screen and (min-width: $mobile) {
-
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  max-width: 450px;
+  
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
     width: 270px;
   }
@@ -42,25 +34,21 @@
 
 .advantages-list-icon-background {
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
   
-    max-width: 450px;
-    height: 120px;
+  max-width: 450px;
+  height: 120px;
   
-    border-radius: 4px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
     
     
-    background-color: $gray-section-background-color;
-  @media screen and (min-width: $mobile) {
-
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  background-color: $gray-section-background-color;
+  
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
     width: 270px;
     height: 120px;
@@ -68,49 +56,41 @@
 }
 
 .advantages-list-text {
-  @media screen and (min-width: $mobile) {
+  margin-top: 0px;
+  margin-bottom: 30px;
 
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $p-text-color;
+
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
     margin: 0px;
   }
 }
 
 .advantages-list-title {
-  @media screen and (min-width: $mobile) {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  
+  color: $h2-h3-text-color;
 
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    margin-top: 0px;
-    margin-bottom: 10px;
-  
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  
-    color: $h2-h3-text-color;
+    text-align: left;
   }
 }
 
-.advantages-list-item {
-  @media screen and (min-width: $mobile) {
-
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-  }
-}

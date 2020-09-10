@@ -1,328 +1,300 @@
-footer {
-  @media screen and (min-width: $mobile) {
-
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
-    padding-top: 60px;
+footer {  
+  padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: $footer-background-color;
+
+  @media screen and (min-width: $tablet) {}
+  @media screen and (min-width: $desktop) {
+      
   }
 }
 
 .footer-container {
-  @media screen and (min-width: $mobile) {
+  text-align: center;
 
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    text-align: left;
   }
 }
 
 .footer-logo {
-  @media screen and (min-width: $mobile) {
+  display: inline-block;
+  margin-bottom: 20px;
+  
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  
+  & > span {
+    color: #ffffff;
+  }
 
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    display: inline-block;
+ 
+  }
+}
+.footer-contacts {
+  margin-bottom: 60px;
 
-    margin-bottom: 20px;
-  
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #2196f3;
-  
-    & > span {
-      color: #ffffff;
-    }
+  @media screen and (min-width: $tablet) {}
+  @media screen and (min-width: $desktop) {
+  margin-bottom: 0px;
   }
 }
 
 .footer-contacts-item {
-  @media screen and (min-width: $mobile) {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  
+  color: $footer-contacts-text-color;
 
-  }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {}
+  @media screen and (min-width: $desktop) {
     
   }
-  @media screen and (min-width: $desktop) {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-  
-    color: $footer-contacts-text-color;
-  }
-  
 }
 
 .footer-contacts-item-mail {
-  @media screen and (min-width: $mobile) {
+  display: inline-block;
 
-  }
+  margin-bottom: 9px;
+
   @media screen and (min-width: $tablet) {
     
   }
   @media screen and (min-width: $desktop) {
-    display: inline-block;
-
-    margin-bottom: 9px;
+    
   }
 }
 
 .footer-contacts-item-adress {
-  @media screen and (min-width: $mobile) {
+  display: inline-block;
 
-  }
+  margin-bottom: 9px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  
+  color: $inversion-p-text-color;
+
   @media screen and (min-width: $tablet) {
     
   }
   @media screen and (min-width: $desktop) {
-    display: inline-block;
-
-    margin-bottom: 9px;
-  
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-  
-    color: $inversion-p-text-color;
+    
   }
 }
 
 .signup-block-title {
-  @media screen and (min-width: $mobile) {
+  margin-bottom: 20px;
 
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 20px;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   
-    color: $inversion-p-text-color;
+  color: $inversion-p-text-color;
+
+  @media screen and (min-width: $tablet) {}
+  @media screen and (min-width: $desktop) {
+    
   }
 }
 
 .signup-block-items {
-  @media screen and (min-width: $mobile) {
+  display: flex;
+  justify-content: center;
 
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  margin-bottom: 60px;
+  
+
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    display: flex;
+    margin-bottom: 0px;
   }
 }
 
 .signup-block-item:not(:last-child) {
-  @media screen and (min-width: $mobile) {
+  margin-right: 10px;
 
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    margin-right: 10px;
+    
   }
  
 }
 
 .signup-block-item-link {
-  @media screen and (min-width: $mobile) {
-
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-    width: 44px;
-    height: 44px;
-    border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
    
+  background-color: $footer-unactive-soc-link-color;
   
-    background-color: $footer-unactive-soc-link-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-    &:hover,
-    &:focus {
-     background-color: $active-link-color;
-    }
+  &:hover,
+  &:focus {
+    background-color: $active-link-color;
+  }
+
+  @media screen and (min-width: $tablet) {}
+  @media screen and (min-width: $desktop) {
+    
   }
 }
 
 .signup-block-item-icon {
-  @media screen and (min-width: $mobile) {
+  display: block;
 
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  fill: #ffffff;
+
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    display: block;
-
-    fill: #ffffff;
+    
   }
 }
 
 .subscribe-block-title {
-  @media screen and (min-width: $mobile) {
+  margin-bottom: 20px;
 
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 20px;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   
-    color: $inversion-p-text-color;
+  color: $inversion-p-text-color;
+
+  @media screen and (min-width: $tablet) {}
+  @media screen and (min-width: $desktop) {
+    
   }
 }
 
 .subscribe-block-form {
-  @media screen and (min-width: $mobile) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 }
 
 .footer-signup-input {
-  @media screen and (min-width: $mobile) {
+  display: block;
+  width: 358px;
+  height: 50px;
+  
+  margin-bottom: 20px;
+  padding: 15px 16px;
+  
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  
+  background-color: $footer-background-color;
+  color: rgba(255, 255, 255, 0.6);
 
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    display: block;
-    width: 358px;
-    height: 50px;
-  
+    margin-bottom: 0px;
     margin-right: 12px;
-    padding: 15px 16px;
-  
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-  
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-  
-    background-color: $footer-background-color;
-    color: rgba(255, 255, 255, 0.6);
   }
 }
 
 .footer-signup-button {
-  @media screen and (min-width: $mobile) {
-
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
-    width: 200px;
-    height: 50px;
+  width: 200px;
+  height: 50px;
   
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
   
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87px;
-    letter-spacing: 0.06em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87px;
+  letter-spacing: 0.06em;
   
-    background-color: $active-link-color;
-    color: #ffffff;
-    fill: currentColor;
+  background-color: $active-link-color;
+  color: #ffffff;
+  fill: currentColor;
   
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
   
-    &:hover,
-    &:focus {
-      background-color: #ffffff;
-      color: $active-link-color;
-    }
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: $active-link-color;
+  }
+
+  @media screen and (min-width: $tablet) {}
+  @media screen and (min-width: $desktop) {
+    
   }
 }
 
 .icon-send {
-  @media screen and (min-width: $mobile) {
+  margin-left: 10px;
 
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    margin-left: 10px;
+    
   }
 }
 
 .footer-signup-button:hover > .icon-send-use,
 .footer-signup-button:focus > .icon-send-use {
-  @media screen and (min-width: $mobile) {
+  fill: $active-link-color;
 
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    fill: $active-link-color;
+    
   }
  }

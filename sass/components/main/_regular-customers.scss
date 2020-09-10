@@ -1,102 +1,98 @@
 .customers-section {
-  @media screen and (min-width: $mobile) {
+  max-width: 480px;
 
-  }
-  @media screen and (min-width: $tablet) {
+  margin-left: auto;
+  margin-right: auto;
 
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
+    max-width: 1170px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
 .customers-title {
-  @media screen and (min-width: $mobile) {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  
+  color: $h2-h3-text-color;
 
-  }
-  @media screen and (min-width: $tablet) {
-
-  }
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    margin-top: 0px;
     margin-bottom: 50px;
-  
-    font-weight: bold;
+
     font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-  
-    color: $h2-h3-text-color;
   }
 }
 
 .regular-customers-list {
-  @media screen and (min-width: $mobile) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-  }
-  @media screen and (min-width: $tablet) {
-
-  }
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    display: flex;
-    justify-content: space-between;
-  }
+    flex-wrap: nowrap;
+    }
 }
 
 .regular-customers-list-link {
-  @media screen and (min-width: $mobile) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  margin-bottom: 30px;
+  
+  width: 210px;
+  height: 90px;
+  
+  border: 1px solid $unactive-customers-frame-color;
+  border-radius: 4px;
+  
+  background-color: transparent;
+  
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover,
+  &:focus {
+  border: 1px solid $active-link-color;
   }
-  @media screen and (min-width: $tablet) {
 
-  }
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    width: 170px;
-    height: 90px;
-  
-    border: 1px solid $unactive-customers-frame-color;
-    border-radius: 4px;
-  
-    background-color: transparent;
-  
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-    &:hover,
-    &:focus {
-    border: 1px solid $active-link-color;
-    }
+  margin-bottom: 0px;
+
+  width: 170px;
+  height: 90px;
   }
 }
 
 .regular-customers-list-icon {
-  @media screen and (min-width: $mobile) {
+  fill: $unactive-customers-frame-color;
 
-  }
-  @media screen and (min-width: $tablet) {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  }
+  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
-    fill: $unactive-customers-frame-color;
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
 }
 
 .regular-customers-list-link:hover > .regular-customers-list-icon,
 .regular-customers-list-link:focus > .regular-customers-list-icon {
-  @media screen and (min-width: $mobile) {
+  fill: $active-link-color;
 
-  }
-  @media screen and (min-width: $tablet) {
-
-  }
-  @media screen and (min-width: $desktop) {
-    fill: $active-link-color;
-  }
+  @media screen and (min-width: $tablet) {}
+  @media screen and (min-width: $desktop) {}
 }

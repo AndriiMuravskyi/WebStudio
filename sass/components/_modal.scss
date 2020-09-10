@@ -1,4 +1,7 @@
 .backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  
   @media screen and (min-width: $mobile) {
 
   }
@@ -6,12 +9,22 @@
     
   }
   @media screen and (min-width: $desktop) {
-    opacity: 0;
-    pointer-events: none;
+    
   }
 }
 
 .backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+    
+  background-color: rgba(0, 0, 0, 0.5);
+  
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: $mobile) {
 
   }
@@ -19,20 +32,27 @@
     
   }
   @media screen and (min-width: $desktop) {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
     
-    background-color: rgba(0, 0, 0, 0.5);
-  
-    opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  width: 450px;
+  height: 609px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  
+  transform: translate(-50%, -50%) scale(1);
   @media screen and (min-width: $mobile) {
 
   }
@@ -40,26 +60,15 @@
     
   }
   @media screen and (min-width: $desktop) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  
-    width: 528px;
-    height: 581px;
-    padding-top: 40px;
-    padding-left: 41px;
-    padding-right: 39px;
-  
-    background: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-  
-    transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  height: 581px;
   }
 }
 
 .backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: $mobile) {
 
   }
@@ -67,20 +76,12 @@
     
   }
   @media screen and (min-width: $desktop) {
-    transform: translate(-50%, -50%) scale(0.9);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
 }
 
 .modal-heading {
-  @media screen and (min-width: $mobile) {
-
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
-    margin-top: 0px;
+  margin-top: 0px;
     margin-bottom: 12px;
     text-align: center;
     font-family: Roboto;
@@ -90,11 +91,7 @@
     line-height: 1.15;
     letter-spacing: 0.03em;
     color: $h2-h3-text-color;
-  }
-}
 
-/* modal close button */
-.modal-close-button {
   @media screen and (min-width: $mobile) {
 
   }
@@ -102,7 +99,13 @@
     
   }
   @media screen and (min-width: $desktop) {
-    position: absolute;
+    
+  }
+}
+
+/* modal close button */
+.modal-close-button {
+  position: absolute;
     top: 8px;
     right: 8px;
     width: 30px;
@@ -118,11 +121,7 @@
     &:focus {
     fill: $active-link-color;
     }
-  }
-}
 
-/* modal form */
-.label-name {
   @media screen and (min-width: $mobile) {
 
   }
@@ -130,7 +129,13 @@
     
   }
   @media screen and (min-width: $desktop) {
-    display: block;
+    
+  }
+}
+
+/* modal form */
+.label-name {
+  display: block;
     margin-bottom: 4px;
   
     font-family: Roboto;
@@ -140,10 +145,6 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: $unactive-link-color;
-  }
-}
-
-.modal-form-input {
   @media screen and (min-width: $mobile) {
 
   }
@@ -151,7 +152,12 @@
     
   }
   @media screen and (min-width: $desktop) {
-    display: block;
+    
+  }
+}
+
+.modal-form-input {
+  display: block;
     width: 100%;
     height: 40px;
   
@@ -162,10 +168,7 @@
   
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-  }
-}
 
-.comment {
   @media screen and (min-width: $mobile) {
 
   }
@@ -173,7 +176,12 @@
     
   }
   @media screen and (min-width: $desktop) {
-    height: 120px;
+    
+  }
+}
+
+.comment {
+  height: 120px;
     resize: none;
     padding: 12px 16px;
     margin-bottom: 20px;
@@ -191,11 +199,6 @@
     
       color: rgba(117, 117, 117, 0.5);
     }
-  }
-}
-
-.modal-form-input:hover + .modal-input-icon,
-.comment-field:focus-within > .modal-input-icon {
   @media screen and (min-width: $mobile) {
 
   }
@@ -203,7 +206,22 @@
     
   }
   @media screen and (min-width: $desktop) {
-    color: $active-link-color;
+    
+  }
+}
+
+.modal-form-input:hover + .modal-input-icon,
+.comment-field:focus-within > .modal-input-icon {
+  color: $active-link-color;
+
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
+  @media screen and (min-width: $desktop) {
+    
   }
 }
 
@@ -211,6 +229,9 @@
 .comment:hover,
 .modal-form-label:focus-within > .modal-form-input,
 .comment-field:focus-within > .comment {
+  border: 1px solid $active-link-color;
+    outline: none;
+
   @media screen and (min-width: $mobile) {
 
   }
@@ -218,20 +239,12 @@
     
   }
   @media screen and (min-width: $desktop) {
-    border: 1px solid $active-link-color;
-    outline: none;
+    
   }
 }
 
 .modal-submit-button {
-  @media screen and (min-width: $mobile) {
-
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
-    margin-top: 30px;
+  margin-top: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -251,10 +264,7 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: #ffffff;
-  }
-}
 
-.modal-form-checkbox-text {
   @media screen and (min-width: $mobile) {
 
   }
@@ -262,22 +272,38 @@
     
   }
   @media screen and (min-width: $desktop) {
-    display: flex;
+    
+  }
+}
+
+.modal-form-checkbox-text {
+  display: flex;
     align-items: center;
     justify-content: center;
   
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     
     color: $unactive-link-color;
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
+  @media screen and (min-width: $desktop) {
+    
   }
 }
 
 .modal-form-checkbox-link {
+  margin-left: 4px;
+    color: $active-link-color;
+    text-decoration: underline;
   @media screen and (min-width: $mobile) {
 
   }
@@ -285,13 +311,15 @@
     
   }
   @media screen and (min-width: $desktop) {
-    margin-left: 4px;
-    color: $active-link-color;
-    text-decoration: underline;
+    
   }
 }
 
 .checkbox {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+
   @media screen and (min-width: $mobile) {
 
   }
@@ -299,13 +327,13 @@
     
   }
   @media screen and (min-width: $desktop) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
   }
 }
 
 .modal-form-label {
+  position: relative;
+
   @media screen and (min-width: $mobile) {
 
   }
@@ -313,27 +341,31 @@
     
   }
   @media screen and (min-width: $desktop) {
-    position: relative;
+    
   }
 }
 
 .modal-input-icon {
-  @media screen and (min-width: $mobile) {
-
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
-    position: absolute;
+  position: absolute;
     top: 28px;
     left: 12px;
     width: 18px;
     height: 18px;
+
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
+  @media screen and (min-width: $desktop) {
+    
   }
 }
 
 .modal-input-icon {
+  fill: currentColor;
+
   @media screen and (min-width: $mobile) {
 
   }
@@ -341,11 +373,15 @@
     
   }
   @media screen and (min-width: $desktop) {
-    fill: currentColor;
+   
   }
 }
 
 .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
   @media screen and (min-width: $mobile) {
 
   }
@@ -353,30 +389,18 @@
     
   }
   @media screen and (min-width: $desktop) {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    
   }
 }
 
 .checkbox-icon {
-  @media screen and (min-width: $mobile) {
-
-  }
-  @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
-    display: inline-block;
+  display: inline-block;
     width: 16px;
     height: 15px;
     border: 1px solid #212121;
     border-radius: 2px;
     margin-right: 8px;
-  }
-}
 
-.checkbox:checked + .checkbox-icon {
   @media screen and (min-width: $mobile) {
 
   }
@@ -384,10 +408,24 @@
     
   }
   @media screen and (min-width: $desktop) {
-    border: 1px solid $active-link-color;
+    
+  }
+}
+
+.checkbox:checked + .checkbox-icon {
+  border: 1px solid $active-link-color;
     background-color: $active-link-color;
     background-image: url(../images/icon-check.svg);
     background-size: contain;
     background-origin: border-box;
+
+  @media screen and (min-width: $mobile) {
+
+  }
+  @media screen and (min-width: $tablet) {
+    
+  }
+  @media screen and (min-width: $desktop) {
+    
   }
 }
