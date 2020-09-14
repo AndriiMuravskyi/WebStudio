@@ -110,7 +110,9 @@ header {
     justify-content: flex-start;
     margin-left: auto;
   }
-  @media screen and (min-width: $desktop) {}
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
 
 .header-contacts-list + .header-contacts-list {
@@ -124,6 +126,9 @@ header {
 .header-contacts-list-mail {
   @media screen and (min-width: $tablet) {
     margin-bottom: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 30px;
   }
 }
 

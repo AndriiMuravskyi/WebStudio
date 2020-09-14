@@ -351,6 +351,7 @@ html {
 *,
 *::before,
 *::after {
+  outline: 1px solid #000;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -516,9 +517,24 @@ header {
   }
 }
 
+@media screen and (min-width: 1170px) {
+  .header-contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header-contacts-list-mail {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .header-contacts-list-mail {
+    margin-right: 30px;
   }
 }
 
@@ -847,7 +863,6 @@ header {
 
 @media screen and (min-width: 1170px) {
   .team-section {
-    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -886,6 +901,8 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -921,8 +938,14 @@ header {
 
 @media screen and (min-width: 768px) {
   .team-list-item {
-    width: calc((100% - 2 * 15px) / 2);
+    width: calc((100% - 4 * 15px) / 2);
     max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .team-list-item {
+    width: calc((100% - 8 * 15px) / 4);
   }
 }
 
@@ -931,12 +954,6 @@ header {
   width: 100%;
   height: auto;
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 1170px) {
-  .team-list-item-img {
-    width: 270px;
-  }
 }
 
 .team-list-item-name {
@@ -1017,7 +1034,6 @@ header {
 
 @media screen and (min-width: 1170px) {
   .customers-section {
-    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1340,6 +1356,18 @@ footer {
   }
 }
 
+@media screen and (min-width: 1170px) {
+  .footer-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -1364,6 +1392,7 @@ footer {
 @media screen and (min-width: 1170px) {
   .footer-contacts {
     margin-bottom: 0px;
+    text-align: left;
   }
 }
 
@@ -1404,6 +1433,12 @@ footer {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1170px) {
+  .signup-block-title {
+    text-align: left;
+  }
 }
 
 .signup-block-items {
@@ -1465,6 +1500,12 @@ footer {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1170px) {
+  .subscribe-block-title {
+    text-align: left;
+  }
+}
+
 .subscribe-block-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1523,6 +1564,7 @@ footer {
   .footer-signup-input {
     margin-bottom: 0px;
     margin-right: 12px;
+    width: 358px;
   }
 }
 
