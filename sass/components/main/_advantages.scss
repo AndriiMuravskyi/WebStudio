@@ -2,7 +2,6 @@
   margin-top: 0px;
   margin-bottom: 60px;
 
-  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
     margin-bottom: 94px;
   }
@@ -16,17 +15,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: $tablet) {}
-  @media screen and (min-width: $desktop) {
+
+  @media screen and (min-width: $tablet) {
     flex-direction: row;
-    justify-content: space-between;
-  }
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: unset;
+    margin-left: -15px;
+    margin-right: -15px;
+    }
+  @media screen and (min-width: $desktop) {}
 }
 
 .advantages-list-item {
-  // max-width: 450px;
-  
-  @media screen and (min-width: $tablet) {}
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 4 * 15px) / 2);
+    max-width: 354px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
   @media screen and (min-width: $desktop) {
     width: 270px;
   }
@@ -47,7 +54,6 @@
     
   background-color: $gray-section-background-color;
   
-  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
     width: 270px;
     height: 120px;
@@ -67,7 +73,6 @@
 
   color: $p-text-color;
 
-  @media screen and (min-width: $tablet) {}
   @media screen and (min-width: $desktop) {
     margin: 0px;
   }
@@ -87,9 +92,10 @@
   
   color: $h2-h3-text-color;
 
-  @media screen and (min-width: $tablet) {}
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     text-align: left;
+
   }
+  @media screen and (min-width: $desktop) {}
 }
 

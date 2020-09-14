@@ -1,63 +1,53 @@
 header {
   display: none;
-  @media screen and (min-width: $mobile) {
-
-  }
+  @media screen and (min-width: $mobile) {}
   @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
+    display: block;
     position: fixed;
     width: 100%;
     top: 0px;
     z-index: 999;
     background-color: $header-background-color;
     border-bottom: 1px solid #ececec;
+    
   }
+  @media screen and (min-width: $desktop) {}
   }
 
 .logo {
-  @media screen and (min-width: $mobile) {
-
-  }
+  @media screen and (min-width: $mobile) {}
   @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
     color: #2196f3;
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     & span {
       color: $unactive-nav-link-color;
     }
   }
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+  }
 }
 
 /* header-site-nav */
 .header-items {
-  @media screen and (min-width: $mobile) {
-
-  }
+  @media screen and (min-width: $mobile) {}
   @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
     display: flex;
+    // max-width: $tablet;
+    padding-left: 15px;
+    padding-right: 15px;
     align-items: center;
   }
+  @media screen and (min-width: $desktop) {}
 }
 
 .site-nav-list {
-  @media screen and (min-width: $mobile) {
-
-  }
+  @media screen and (min-width: $mobile) {}
   @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
     display: flex;
     margin-left: 85px;
   
@@ -90,16 +80,12 @@ header {
       border-radius: 2px;
     }
   }
+  @media screen and (min-width: $desktop) {}
 }
 
 .site-nav-list-item {
-  @media screen and (min-width: $mobile) {
-
-  }
+  @media screen and (min-width: $mobile) {}
   @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
     position: relative;
 
     &:not(:last-child) {
@@ -112,47 +98,45 @@ header {
       padding-bottom: 32px;
     }
   }
+  @media screen and (min-width: $desktop) {}
 }
 
 /* header-contacts-list */
 .header-contacts {
-  @media screen and (min-width: $mobile) {
-
-  }
+  @media screen and (min-width: $mobile) {}
   @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-left: auto;
   }
+  @media screen and (min-width: $desktop) {}
 }
-.header-contacts-list + .header-contacts-list {
-  @media screen and (min-width: $mobile) {
 
-  }
+.header-contacts-list + .header-contacts-list {
+  @media screen and (min-width: $mobile) {}
   @media screen and (min-width: $tablet) {
-    
+    // margin-left: 30px;
   }
-  @media screen and (min-width: $desktop) {
-    margin-left: 30px;
+  @media screen and (min-width: $desktop) {}
+}
+
+.header-contacts-list-mail {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 10px;
   }
 }
 
 .header-contacts-list-item {
-  @media screen and (min-width: $mobile) {
-
-  }
+  @media screen and (min-width: $mobile) {}
   @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
+
     color: $unactive-link-color;
   
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.02em;
   
@@ -163,26 +147,25 @@ header {
     color: $active-link-color;
     }
   }
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  }
 }
 
 .header-contacts-list-icon {
-  @media screen and (min-width: $mobile) {
-
-  }
+  @media screen and (min-width: $mobile) {}
   @media screen and (min-width: $tablet) {
-    
-  }
-  @media screen and (min-width: $desktop) {
     margin-right: 10px;
     fill: currentColor;
     &.envelope {
-      width: 16px;
-      height: 11px;
-    }
+      width: 14px;
+      height: 10px;
+      }
     &.smartphone {
       width: 10px;
-      height: 15px;
+      height: 14px;
     }
   }
+  @media screen and (min-width: $desktop) {}
 }
 

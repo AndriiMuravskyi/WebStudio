@@ -1,20 +1,13 @@
 .services-section {
   display: none;
   
-  @media screen and (min-width: $tablet) {
-
-  }
   @media screen and (min-width: $desktop) {
     display: block;
     padding-bottom: 94px;
   }
 }
 .services-title {
-  
-  @media screen and (min-width: $tablet) {
-
-  }
-  @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
     margin-top: 0px;
     margin-bottom: 50px;
   
@@ -29,10 +22,6 @@
 }
 
 .service-list {
-  
-  @media screen and (min-width: $tablet) {
-
-  }
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
@@ -40,10 +29,6 @@
 }
 
 .service-list-card {
-  
-  @media screen and (min-width: $tablet) {
-
-  }
   @media screen and (min-width: $desktop) {
     position: relative;
     text-align: center;
@@ -51,20 +36,12 @@
 }
 
 .service-list-img {
-  
-  @media screen and (min-width: $tablet) {
-
-  }
   @media screen and (min-width: $desktop) {
     display: block;
   }
 }
 
 .services-list-item {
-  
-  @media screen and (min-width: $tablet) {
-
-  }
   @media screen and (min-width: $desktop) {
     position: absolute;
     bottom: 0px;
